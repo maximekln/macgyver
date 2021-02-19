@@ -41,14 +41,10 @@ They will allow MacGyver to create a syringe and put our guard to sleep.
 
     1. To install Python 3 on your machine, here are the details: https://www.wikihow.com/Install-Python 
     2. To install Pygame on your machine, here are the details: https://www.pygame.org/wiki/GettingStarted
-    3. To launch the game, go to the root of the project's directory and execute the following command on the terminal: 
-       python3 main.py
-
-
-## Contribute to the project
-
-MAZEGYVER is an open source project. Feel free to fork the source and contribute with your own features.
+    3. To install and execute the game, follow these steps: 
+       - git clone https://github.com/mkelani/macgyver-freedom.git && cd macgyver-freedom
+       - python3 main.py on linux/macosx or py -3 main.py on windows
 
 ## Author
 
-Your humble servant: MaximeKelani
+Your humble servant: mkelani
