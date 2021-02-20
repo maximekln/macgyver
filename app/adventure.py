@@ -36,7 +36,7 @@ class Adventure:
         """Method to make the welcome screen work"""
 
         # Displays window
-        window = pygame.display.set_mode((const.MAZE_SIZE, const.MAZE_SIZE), pygame.RESIZABLE)
+        window = pygame.display.set_mode((const.MAZE_SIZE, const.MAZE_SIZE))
         # Displays title of the game
         pygame.display.set_caption(const.GAME_TITLE)
 
@@ -74,7 +74,7 @@ class Adventure:
     def operate_adventure_screen(self):
         """Method to make the adventure screen of the game work"""
 
-        window = pygame.display.set_mode((const.MAZE_SIZE, (const.MAZE_HEIGHT + const.BANNER_HEIGHT)), pygame.RESIZABLE)
+        window = pygame.display.set_mode((const.MAZE_SIZE, (const.MAZE_HEIGHT + const.BANNER_HEIGHT)))
         pygame.display.set_caption(const.GAME_TITLE)  # Title of the window
 
         # Initializing the map
@@ -174,7 +174,7 @@ class Adventure:
 
             # If the player has collected all the items : MacGyver wins
             if self.macgyver.items_collected == 3:
-                window = pygame.display.set_mode((const.MAZE_SIZE, const.MAZE_SIZE), pygame.RESIZABLE)
+                window = pygame.display.set_mode((const.MAZE_SIZE, const.MAZE_SIZE))
                 pygame.display.set_caption("YOU ARE FREE ! WELL DONE MACGYVER !")
                 end_page = pygame.image.load(const.WIN_IMG).convert()
                 window.blit(pygame.transform.scale(end_page, (const.MAZE_SIZE, const.MAZE_SIZE)), (0, 0))
